@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: rgb(169, 56, 207);
+}
+#MyClockDisplay {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    #MyClockDisplay {
+      position: absolute;
+      left: 15%;
+      top: 25%;
+    }
+  }
