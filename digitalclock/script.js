@@ -15,7 +15,7 @@ function showTime() {
         session = "PM";
     }
 
-    h = (h < 10) ? "0" + h : h;
+    h = (h < 10) ? "0" + h : h; // if hours are < 10, "0 + hours", else "hours"
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
