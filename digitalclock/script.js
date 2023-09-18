@@ -15,9 +15,9 @@ function showTime() {
         session = "PM";
     }
 
-    h = (h < 10) ? "0" + h : h; // if hours are < 10, "0 + hours", else "hours"
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
+    h = (h < 10) ? "0" + h : h; // if hours are < 10, "0" + hours, else hours
+    m = (m < 10) ? "0" + m : m; // if mins are < 10, "0" + mins, else mins
+    s = (s < 10) ? "0" + s : s; // if secs are < 10, "0" + secs, else secs
 
     let time = h + ':' + m + ':' + s + " " + session; 
 
