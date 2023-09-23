@@ -57,5 +57,24 @@ for (i = 0; i < 50; i++) {
     bal.push(new Ball());
 }
 
+function animate() {
+    if (b != window.innerWidth || c != window.innerHeight) {
+        b = window.innerWidth;
+        c = window.innerHeight;
+        canvas.width = b;
+        canvas.height = c;
+    }
+    requestAnimationFrame(animate); 
+    a.clearRect(0, 0, b, c);
+    for (let i = 0; i < bal.length; i++)
+    {
+        bal[i].update();
+        bal[i].y += bal[i].dy;
+        bal[i].x += bal[i].dx;
+        if (bal[i].y + bal[i].radius >= c)
+    {
 
-
+    }
+}
+}
+ 
