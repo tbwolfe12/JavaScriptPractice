@@ -7,12 +7,14 @@ body {
     background-color: black;
     color: rgb(169, 56, 207);
     font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
 }
 #MyClockDisplay {
     position: absolute;
     left: 40%;
     top: 50%;
     font-size: 50px;
+    z-index: 3;
 }
 :root {
     --width: 300px;
@@ -20,11 +22,27 @@ body {
     --y-speed: 7s;
     --transition-speed: 2.2s;
 }
-.e {
-    width: var(--width);
-    height: var(--width);
+img, .x {
+width: 50%;
+height: 20%;
+}
+.x {
+    animation: x 13s linear infinite alternate;
+}
+.y {
+    animation: y 7s linear infinite alternate;
 }
 
+@keyframes x {
+    100% {
+        transform: translateX(calc(100vw - 50%));
+    }
+}
+@keyframes y {
+    100% {
+        transform: translateY(calc(100vh - 20%));
+    }
+}
 @media screen and (max-width: 480px) {
     #MyClockDisplay {
       position: absolute;
