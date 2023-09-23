@@ -48,5 +48,16 @@ height: 100px;
       position: absolute;
       left: 15%;
       top: 25%;
+      font-size: 40px;
+    }
+    @keyframes x {
+    50% {
+            transform: translateX(calc(100vw - 125px));
+        }
+    }
+    @keyframes y {
+        100% {
+            transform: translateY(calc(100vh - 180px));
+        }
     }
   }
