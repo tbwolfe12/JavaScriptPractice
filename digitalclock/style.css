@@ -23,8 +23,8 @@ body {
     --transition-speed: 2.2s;
 }
 img, .x {
-width: 50%;
-height: 20%;
+width: 150px;
+height: 100px;
 }
 .x {
     animation: x 13s linear infinite alternate;
@@ -35,12 +35,12 @@ height: 20%;
 
 @keyframes x {
     100% {
-        transform: translateX(calc(100vw - 50%));
+        transform: translateX(calc(100vw - 150px));
     }
 }
 @keyframes y {
     100% {
-        transform: translateY(calc(100vh - 20%));
+        transform: translateY(calc(100vh - 100px));
     }
 }
 @media screen and (max-width: 480px) {
@@ -48,5 +48,16 @@ height: 20%;
       position: absolute;
       left: 15%;
       top: 25%;
+      font-size: 40px;
+    }
+    @keyframes x {
+    50% {
+            transform: translateX(calc(100vw - 125px));
+        }
+    }
+    @keyframes y {
+        100% {
+            transform: translateY(calc(100vh - 180px));
+        }
     }
   }
